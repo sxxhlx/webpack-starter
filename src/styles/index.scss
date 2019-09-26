@@ -1,5 +1,27 @@
-$body-color: blue;
+$body-color: white;
+$opacity-black: rgba(0, 0, 0, 0.3);
 
 body {
   color: $body-color;
+  background: url(../assets/bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $opacity-black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10vw;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
